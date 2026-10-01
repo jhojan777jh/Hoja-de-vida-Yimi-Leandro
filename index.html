@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Yimi Leandro Ballesteros Tapasco</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            min-height: 100vh;
+            padding: 20px;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .header p {
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
+        .content {
+            padding: 35px 30px;
+        }
+        .section {
+            margin-bottom: 28px;
+        }
+        .section h2 {
+            color: #1d4ed8;
+            font-size: 1.6rem;
+            margin-bottom: 18px;
+            border-bottom: 3px solid #dbeafe;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(220px, 1fr));
+            gap: 18px;
+        }
+        .info-card {
+            background: #f8fafc;
+            border-left: 5px solid #1d4ed8;
+            border-radius: 12px;
+            padding: 18px 16px;
+        }
+        .label {
+            display: block;
+            color: #4f46e5;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 1.06rem;
+            color: #111827;
+            line-height: 1.5;
+        }
+        .profile-box {
+            background: #f8fafc;
+            border-left: 5px solid #7c3aed;
+            border-radius: 12px;
+            padding: 20px 18px;
+            line-height: 1.7;
+            color: #374151;
+        }
+        ul.hobbies {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 12px;
+        }
+        ul.hobbies li {
+            background: #f8fafc;
+            border-left: 5px solid #22c55e;
+            border-radius: 10px;
+            padding: 14px 16px;
+            color: #111827;
+            font-size: 1.02rem;
+        }
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .contact-item {
+            flex: 1 1 220px;
+            background: #f8fafc;
+            border: 1px solid #dbeafe;
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .icon {
+            font-size: 1.5rem;
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #dbeafe;
+        }
+        a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .footer {
+            background: #f1f5f9;
+            text-align: center;
+            padding: 18px 16px;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 700px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .content { padding: 24px 18px; }
+            .header { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Yimi Leandro Ballesteros Tapasco</h1>
+            <p>Hoja de Vida</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Datos Personales</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="label">Nombre completo</span>
+                        <div class="value">Yimi Leandro Ballesteros Tapasco</div>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">Documento</span>
+                        <div class="value">1.088.280.915</div>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">Teléfono</span>
+                        <div class="value">304 596 8543</div>
+                    </div>
+                    <div class="info-card">
+                        <span class="label">Correo</span>
+                        <div class="value"><a href="mailto:jimmyballesteros192@gmail.com">jimmyballesteros192@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Perfil Personal</h2>
+                <div class="profile-box">
+                    Persona responsable, comprometida y con disposición para aprender y desempeñar diferentes funciones laborales. Destaca por su actitud positiva, capacidad para trabajar en equipo y adaptación a nuevos entornos. Interesado en aportar al cumplimiento de objetivos y crecer profesionalmente.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Datos de Interés</h2>
+                <ul class="hobbies">
+                    <li>⚽ Jugar al fútbol</li>
+                    <li>💖 Valora el amor, la amistad y las buenas relaciones interpersonales</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Contacto</h2>
+                <div class="contact-row">
+                    <div class="contact-item">
+                        <div class="icon">📱</div>
+                        <div>
+                            <div class="label" style="margin-bottom:2px;">Teléfono</div>
+                            <div class="value">304 596 8543</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <div class="label" style="margin-bottom:2px;">Correo</div>
+                            <div class="value"><a href="mailto:jimmyballesteros192@gmail.com">jimmyballesteros192@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2024 Yimi Leandro Ballesteros Tapasco | Hoja de Vida
+        </div>
+    </div>
+</body>
+</html>
